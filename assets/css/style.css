@@ -41,7 +41,7 @@ body {
 }
 
 .btn-banner {
-  float: left !important;
+  float: left;
 }
 
 .data-kuliner-list a {
@@ -49,11 +49,9 @@ body {
 }
 
 #card-mobile-version {
-  display: none !important;
-}
-/* #card-desktop-version {
   display: none;
-} */
+}
+
 /* card */
 .card-container {
   border-radius: 10px;
@@ -68,9 +66,8 @@ body {
 }
 
 .card-judul {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  /* font-family: "Montserrat", sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
   color: #42484b;
 }
@@ -92,19 +89,19 @@ body {
 .card-lokasi {
   margin-top: 12px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
   color: #42484b;
 }
 
-#daftar-kuliner h2 {
+.nama-section {
   font-size: 22px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #42484b;
 }
 
-#daftar-kuliner p {
+.deskripsi-section {
   margin-top: 8px;
   font-size: 18px;
   font-weight: 500;
@@ -116,13 +113,13 @@ body {
 
 @media (max-width: 768px) {
   .btn-banner {
-    float: left !important;
+    float: left;
   }
   .card-container {
-    border-radius: 5px;
+    border-radius: 8px;
   }
   .card-img {
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     height: 150px;
   }
 }
@@ -141,89 +138,41 @@ body {
   }
 
   .btn-banner {
-    float: none !important;
-  }
-
-  #daftar-kuliner h2 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #42484b;
-  }
-
-  #daftar-kuliner p {
-    margin-top: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #6d6d6d;
+    float: none;
   }
 
   .card-img {
-    border-radius: 10px;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center !important;
-  }
-
-  .card-judul {
-    font-size: 18px !important;
-  }
-
-  .card-kategori {
-    margin-top: 6px;
-    font-size: 14px !important;
-  }
-
-  .card-img-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  .card-lokasi {
-    margin-top: 8px;
-    font-size: 14px !important;
-  }
-
-  #card-mobile-version {
-    display: flex !important;
-    justify-content: center !important;
-    padding-top: 18px;
-  }
-
-  #card-desktop-version {
-    display: none !important;
-  }
-}
-
-@media (max-width: 425px) {
-  .card-img {
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
   }
 
-  .card-judul {
-    font-size: 18px !important;
-  }
-
   .card-kategori {
-    margin-top: 6px;
-    font-size: 14px !important;
+    margin: 5px 0px 10px;
   }
 
-  .card-img-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+  #card-mobile-version {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
   }
 
-  .card-lokasi {
-    margin-top: 8px;
-    font-size: 14px !important;
+  #card-desktop-version {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-img {
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .card-kategori {
+    margin: 5px 0px 10px;
   }
 }
